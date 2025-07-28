@@ -14,3 +14,6 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.arrow filter=lfs diff=lfs merge=lfs -text
 benchmarks/data/archive.zip filter=lfs diff=lfs merge=lfs -text
+benchmarks/data/[[:space:]]vqa-rad-visual-question-answering-radiology.zip filter=lfs diff=lfs merge=lfs -text
+benchmarks/data/yolobox.zip filter=lfs diff=lfs merge=lfs -text
+benchmarks/data/vqa-rad-visual-question-answering-radiology.zip filter=lfs diff=lfs merge=lfs -text
