@@ -1,0 +1,8 @@
+path: ../datasets/roboflow
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 13
+names: ['Actiniccheilitis', 'Atypical Nevi Moles', 'Chapped Feet', 'Chondrodermatitis', 'Dyshidrosis', 'Eczema', 'Psoriasis', 'Rosacea', 'acne', 'aids skin effect', 'atopic dermatitis', 'desquamation', 'diaper rash']

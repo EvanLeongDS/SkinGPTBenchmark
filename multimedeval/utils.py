@@ -42,7 +42,7 @@ class EvalParams:
     """
 
     batch_size: int = 128
-    run_name: str = f"run {datetime.now()}"
+    run_name: str = datetime.now().strftime("run_%Y-%m-%d_%H-%M-%S")
     fewshot: bool = False
     num_workers: int = 0
     tensorboard_writer: Any = None

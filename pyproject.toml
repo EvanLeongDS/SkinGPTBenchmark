@@ -45,6 +45,9 @@ spacy = ">=3.6.0,<3.8.4"
 jsonpickle = "*"
 h5py = "*"
 dotmap = "^1.3.30"
+openai = "^1.93.2"
+tqdm = "^4.67.1"
+pydantic-ai = "^0.4.2"
 
 
 [tool.poetry.group.dev.dependencies]
