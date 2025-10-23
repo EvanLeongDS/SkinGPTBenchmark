@@ -95,19 +95,6 @@ def label_to_box(line: str) -> Box:
 
     return Box(x1=x1, y1=y1, x2=x2, y2=y2)
 
-"""
-def process_yolobox() -> tuple[Image.Image, Box, str]:
-    # Return the first image + its box (parsed from the first line of the same-stem .txt).
-    for img_path in yolobox_images.glob("*.jpg"):
-        label_path = yolobox_labels / f"{img_path.stem}.txt"
-        image = Image.open(img_path)
-        first_line = label_path.read_text().splitlines()[0]
-        box = label_to_box(first_line)
-        return image, box, img_path.name
-
-    return None, None, None
-"""
-
 # Run through pydantic agent 
 def predict_box(agent: Agent, image: Image.Image) -> Box:
     """Helper to convert PIL→BinaryContent→model→Box."""
